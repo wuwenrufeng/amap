@@ -36,3 +36,11 @@ pip install -r requirements.txt
 ##### PS: 准确率测试是使用区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了！
 😜
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/fushun.png)
+
+## 交流 & 讨论
+
+如果您对amam有任何疑问，欢迎添加作者微信来交流讨论。或者，您可以扫下方支付宝二维码给作者打赏去升级其他地图api套件件或买一杯咖啡。
+
+<p align="center">
+    <img src="https://github.com/wuwenrufeng/amap/blob/master/docs/chat.jpg" height="360">
+</p>
