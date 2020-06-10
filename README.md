@@ -33,5 +33,6 @@ pip install -r requirements.txt
 #### 2.查询准确率
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/test.png)
 
-**使用数据库中的区级center坐标查询时，准确率其实是100%，丢失的准确率是因为官方将center标记错误了**
+**PS: 准确率测试是使用数据库中的区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了**
+
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/fushun.png)
