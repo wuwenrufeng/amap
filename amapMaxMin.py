@@ -6,11 +6,11 @@
 @Project: amap
 @Desc: 第三步：计算出province, city, district表中的最大最小边界经纬度，并填充到数据库中
 @Time: 2020/04/30 15:13:03
-@Author: guojie.bian (guojie.bian@drcnet.com.cn)
+@Author: wuwenrufeng (wuwenrufeng@163.com)
 @Last Modified: 2020/04/30 15:13:06
-@Modified By: guojie.bian (guojie.bian@drcnet.com.cn>)
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
 @Version: 1.0
-@License: Copyright(C) 2019 - 2020 DRCNET, SRIT DRCNET
+@License: Copyright(C) 2019 - 2020 Borland
 """
 
 
