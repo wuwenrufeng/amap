@@ -78,11 +78,9 @@ class MapApi:
         """
         获取所有的省级信息并入库
         """
-        # 返回下一级行政区信息+不返回行政区边界坐标点
         result = self.query(keyword='中国', subdistrict=1, extensions='base')
         if result:
             districts = result['districts'][0]['districts']
-            # 全国所有的省级行政区信息入库
             for district in districts:
                 name = district['name']
                 adcode = int(district['adcode'])
