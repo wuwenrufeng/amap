@@ -31,7 +31,6 @@ class MaxMin:
                 polylines = polylineRaw.split('|')
                 for polyline in polylines:
                     model(name=row.name, adcode=row.adcode, center=row.center, polyline=polyline)
-                # 删除包含所有区域的原始记录
                 delete(m for m in model if m.id == row.id)
 
     def calculate(self, polyline):
@@ -42,15 +41,12 @@ class MaxMin:
         """
         # ['116.58289,39.623118';'116.58289,39.623118';...]
         polylines = polyline.split(';')
-        # 所有经度纬度
         lats=lons = []
         for polyline in polylines:
             lat,lon = polyline.split(',')
             lats.append(float(lat))
             lons.append(float(lon))
-        # 多边形的最大经纬度
         maxPoint = str(max(lats)) + ',' + str(max(lons))
-        # 多边形的最小经纬度
         minPoint = str(min(lats)) + ',' + str(min(lons))
         return maxPoint, minPoint
 
@@ -59,11 +55,9 @@ class MaxMin:
         """
         model: 行政区Entity
         """
-        # 行政区区域分离
         self.trimPolyline(model)
         for row in model.select():
             max_point, min_point = self.calculate(row.polyline)
-            # 更新行政区表中的最大最小坐标点 
             model[row.id].set(max_point=max_point, min_point=min_point)
             commit()
 
