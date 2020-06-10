@@ -25,8 +25,11 @@ pip install -r requirements.txt
 ```
 
 ## 运行效果
+
 **1. 查询耗时
+
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/time.png)
 **2. 查询准确率
+
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/test.png)
 
