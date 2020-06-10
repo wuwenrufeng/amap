@@ -93,17 +93,11 @@ class MapApi:
         districts: 行政区列表
         """
         for district in districts:
-            # 行政区名称
             name = district.get('name')
-            # 区级代码
             adcode = district.get('adcode')
-            # 行政区中心坐标
             center = district.get('center')
-            # 边界坐标
             polyline = district.get('polyline')
-            # 行政区级别，省、市、区
             level = district.get('level')
-            # 更新省级的相关信息
             if level == 'province':
                 province = Province.get(name=name)
                 province.set(polyline=polyline)
@@ -113,7 +107,6 @@ class MapApi:
                 District(name=name, adcode=adcode, center=center)
             if level == 'street':
                 pass
-            # 默认查询该行政区下三级的行政区信息
             districtsMore = district.get('districts')
             if districtsMore:
                 self.parse(districtsMore)
