@@ -1,3 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+
+"""
+@File: amapSearchApi.py
+@Project: amap
+@Desc: api接口查询
+@Time: 2020/06/10 13:49:53
+@Author: wuwenrufeng (wuwenrufeng@163.com)
+@Last Modified: 2020/06/10 16:18:47
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
+@Version: 1.0
+@License: Copyright(C) 2019 - 2020 Borland
+"""
+
+
 import json
 
 from flask import Flask, jsonify, request
