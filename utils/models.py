@@ -3,14 +3,14 @@
 
 """
 @File: models.py
-@Project: geoL
+@Project: amap
 @Desc: ORM的声明与创建
 @Time: 2020/06/09 9:24:00
-@Author: guojie.bian (guojie.bian@drcnet.com.cn)
+@Author: wuwenrufeng (wuwenrufeng@163.com)
 @Last Modified: 2020/06/09 9:24:06
-@Modified By: guojie.bian (guojie.bian@drcnet.com.cn>)
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
 @Version: 1.0
-@License: Copyright(C) 2019 - 2020 DRCNET, SRIT DRCNET
+@License: Copyright(C) 2019 - 2020 Borland
 """
 
 from pony.orm import *
