@@ -6,11 +6,11 @@
 @Project: amap
 @Desc: 查询给定坐标点所属的行政区域信息
 @Time: 2020/05/14 13:42:20
-@Author: guojie.bian (guojie.bian@drcnet.com.cn)
+@Author: wuwenrufeng (wuwenrufeng@163.com)
 @Last Modified: 2020/05/14 13:42:23
-@Modified By: guojie.bian (guojie.bian@drcnet.com.cn>)
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
 @Version: 1.0
-@License: Copyright(C) 2019 - 2020 DRCNET, SRIT DRCNET
+@License: Copyright(C) 2019 - 2020 Borland
 """
 
 
