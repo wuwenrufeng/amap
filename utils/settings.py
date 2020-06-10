@@ -9,4 +9,4 @@ MYSQL_PARAM = {
 }
 
 # 高德地图key
-KEY = '3b51f0f7e8fce5468595c0226f29e963'
+KEY = 'hello,world'
