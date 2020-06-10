@@ -6,11 +6,11 @@
 @Project: amap
 @Desc: 第二步：高德地图-补充市、区的边界信息 (ps: 高德不提供有关街道的边界顶点信息)
 @Time: 2020/05/26 17:06:19
-@Author: guojie.bian (guojie.bian@drcnet.com.cn)
+@Author: wuwenrufeng (wuwenrufeng@163.com)
 @Last Modified: 2020/05/26 17:06:19
-@Modified By: guojie.bian (guojie.bian@drcnet.com.cn>)
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
 @Version: 1.0
-@License: Copyright(C) 2019 - 2020 DRCNET, SRIT DRCNET
+@License: Copyright(C) 2019 - 2020 Borland
 """
 
 
