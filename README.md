@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ```
 ## 快速开始
 **1. 下载数据库文件**
+
 链接：https://pan.baidu.com/s/1zJZTccPjrY4RD_TgAUh84A 
 提取码：cmuv 
 
