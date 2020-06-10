@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## 交流 & 讨论
 
-如果您对amap有任何疑问，欢迎添加作者微信来交流讨论。或者，您可以扫下方支付宝二维码给作者打赏去升级其他地图api套件件或买一杯咖啡。
+如果您对amap有任何疑问，欢迎添加作者微信来交流讨论。或者，您可以扫下方二维码给作者打赏去升级其他地图api套件或买一杯咖啡哈🥰。
 
 <p align="center">
     <img src="https://github.com/wuwenrufeng/amap/blob/master/docs/chat.jpg" height="260">
