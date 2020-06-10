@@ -122,9 +122,7 @@ class MapApi:
 
     @db_session
     def main(self):
-        # 全国所有的省级行政区基本信息入库
         self.get_provinces()
-        # 遍历各省，查询各省的其他信息以及下三级行政区的信息
         for province in Province.select():
             result = self.query(keyword=province.name)
             if result:
