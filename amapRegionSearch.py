@@ -61,7 +61,6 @@ class RegionSearch:
             polylineList = []
             for polyline in polylines:
                 polylineList.append(self.to_point(polyline))
-            # 判断是否在该区域边界内
             if in_polyline(point, polylineList):
                 result.append(boxR)
         return result
@@ -80,20 +79,15 @@ class RegionSearch:
 
         # 省级
         sql = 'select id,name,adcode,polyline,max_point,min_point from province'
-        # 一级过滤：外包矩形过滤
         provinceBoxs = self.box_filter(point, sql)
-        # 如果通过一级过滤筛选出了唯一值，则不进行二级过滤，即边界区域判定
         if len(provinceBoxs) == 1:
             provinceContains = provinceBoxs
             result['province'] = provinceBoxs[0][1:-1]
         else:
-            # 二级过滤：边界区域判定
             provinceContains = self.polyline_filter(point, provinceBoxs)
             if provinceContains:
-                # 假设：边界区域判定的结果是唯一的，要么有一个符合，要么都不符合
                 result['province'] = provinceContains[0][1:-1]
             else:
-                # 如果没有查询到省级，直接使用外包矩形查询到的省份去进行下一步查询过滤
                 provinceContains = provinceBoxs
 
         # 市级
@@ -111,7 +105,6 @@ class RegionSearch:
                     result['province'] = provinceContain[1:-1]
                     result['city'] = cityContains[0][1:-1]
                 else:
-                    # 如果没有查询到市级，直接使用外包矩形查询到的市级去进行下一步查询
                     cityContains = cityBoxs
             # 区级
             for cityContain in cityContains:
@@ -131,7 +124,6 @@ class RegionSearch:
 
         province = result['province'][0]
         district = result['district'][0]
-        # 只查询到区级时，使用sql的左外连接查询上级行政区信息
         if province=='' and  not district=='' :
             districtAdcode = district[2]
             cityAdcode = districtAdcode // 100 *100
@@ -147,9 +139,7 @@ class RegionSearch:
         pointStr: 字符串形式的坐标点 
         return: 查询到的省市区信息
         """
-        # 转换为Point对象
         point = self.to_point(pointStr)
-        # 查询过滤
         result = self.filter(point)
         return result
 
