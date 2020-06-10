@@ -6,11 +6,11 @@
 @Project: amap
 @Desc: 第一步：高德地图-初始化出各省级(有边界信息)、市级和区级的初始信息
 @Time: 2020/05/26 17:05:53
-@Author: guojie.bian (guojie.bian@drcnet.com.cn)
+@Author: wuwenrufeng (wuwenrufeng@163.com)
 @Last Modified: 2020/05/26 17:05:54
-@Modified By: guojie.bian (guojie.bian@drcnet.com.cn>)
+@Modified By: wuwenrufeng (wuwenrufeng@163.com)
 @Version: 1.0
-@License: Copyright(C) 2019 - 2020 DRCNET, SRIT DRCNET
+@License: Copyright(C) 2019 - 2020 Broland
 """
 
 
