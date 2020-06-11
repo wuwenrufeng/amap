@@ -11,12 +11,12 @@
 - [x] APi接口调用
 
 ## 项目由来
-官方服务有请求限制，升级plus又太贵，伤不起😂
+官方服务有请求限制，又不想升级plus
 
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/gaode1.png)
 
-## 使用
-运行环境：需要运行在 python 3.7.4 （其它版本暂未测试)
+## 配置环境
+运行环境：需要运行在 python 3.7.4+ 
 
 **1. 安装依赖**
 ```bash
@@ -39,6 +39,64 @@ pip install -r requirements.txt
 URL: http://127.0.0.1/search?point=117.195907,39.118327
 
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/api.png)
+## 使用手册
+**第一步：高德地图-初始化出各省级(有边界信息)、市级和区级的初始信息**
+```python
+   python amapInit.py
+```
+
+**第二步：高德地图-补充市、区的边界信息 (ps: 高德不提供有关街道的边界顶点信息)**
+```python
+   python amapPopulate.py
+```
+
+**第三步：计算出province, city, district表中的最大最小边界经纬度，并填充到数据库中**
+```python
+   python amapMaxMin.py
+```
+
+**第四步：开启服务，查询给定坐标点所属的行政区域信息**
+```python
+   python amapSearchApi.py
+```
+## 点在区域内的判定算法
+使用外包矩形+闭合路径包含算法
+
+**一级过滤：外包矩形过滤**
+```python
+   def in_box(point, maxP, minP):
+    """
+    判断点是否在多边形的外包矩形中 
+    point: 待判定的坐标点 
+    maxP: 最大坐标点 
+    minP: 最小坐标点 
+    """
+    return (minP.x <= point.x <= maxP.x) and (minP.y <= point.y <= maxP.y)
+```
+
+**二级过滤：返回(关闭的)路径是否包含给定的点**
+```python
+   def in_polyline(point, polyline):
+    """
+    根据经纬度，判断是否在区域内 
+    point: 待判定的坐标点 
+    polyline: 边界坐标
+    """
+    lats = []
+    lngs = []
+    for pol in polyline:
+        lats.append(pol.x)
+        lngs.append(pol.y)
+    xc = np.array(lats)
+    yc = np.array(lngs)
+    xycrop=np.vstack((xc,yc)).T
+    pth=Path(xycrop,closed=False)
+    mask=pth.contains_points([[point.x,point.y]])
+    if mask:
+        return True
+    return False
+```
+
 ## 测试结果
 #### 测试环境：个人PC
 #### 1.查询耗时
@@ -51,6 +109,12 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 ##### PS: 准确率测试是使用区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了！
 😜
 ![](https://github.com/wuwenrufeng/amap/blob/master/docs/fushun.png)
+
+## 后续更新。。。
+
+**GPS坐标、mapbar坐标、baidu坐标转换成高德坐标**
+
+**逆地址地理信息解析**
 
 ## 交流 & 讨论
 
