@@ -30,7 +30,7 @@ pip install -r requirements.txt
 链接：https://pan.baidu.com/s/1zJZTccPjrY4RD_TgAUh84A 
 提取码：cmuv 
 
-**2. 数据库访问配置 **
+**2. 数据库访问配置**
 
 文件地址：amap/utils/settings.py
 
@@ -45,12 +45,11 @@ MYSQL_PARAM = {
     'db': 'cn_area'
 }
 ```
-
-**2. 开启api查询服务**
+**3. 开启api查询服务**
 ```python
    python amapSearchApi.py
 ```
-**3. 开始查询**
+**4. 开始查询**
 
 URL: http://127.0.0.1/search?point=117.195907,39.118327
 
