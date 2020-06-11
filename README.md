@@ -62,7 +62,7 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 ## 点在区域内的判定算法
 使用外包矩形+闭合路径包含算法
 
-**一级过滤：外包矩形过滤**
+**一级过滤：外包矩形算法**
 ```python
    def in_box(point, maxP, minP):
     """
@@ -74,7 +74,7 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
     return (minP.x <= point.x <= maxP.x) and (minP.y <= point.y <= maxP.y)
 ```
 
-**二级过滤：返回(关闭的)路径是否包含给定的点**
+**二级过滤：闭合路径包含算法**
 ```python
    def in_polyline(point, polyline):
     """
