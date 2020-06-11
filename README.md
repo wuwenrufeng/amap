@@ -3,6 +3,7 @@
 
 ## Features
 - [x] 免费，免费，免费
+- [x] 打破官方请求量限制，一次生产，终生使用
 - [x] 数据源可靠，数据源来自国内一级地图服务提供商
 - [x] 手把手教你自建全国行政区域信息库
 - [x] 手把手教你实现行政区域信息查询算法
@@ -12,7 +13,7 @@
 ## 项目由来
 官方服务有请求限制，升级plus又太贵，伤不起😂
 
-
+![](https://github.com/wuwenrufeng/amap/blob/master/docs/gaode1.png)
 
 ## 使用
 运行环境：需要运行在 python 3.7.4 （其它版本暂未测试)
@@ -24,12 +25,21 @@ git clone https://github.com/wuwenrufeng/amap.git
 pip install -r requirements.txt
 ```
 ## 快速开始
-**1. 下载数据库文件**
+**1. 下载数据库文件cn_area.sql,并导入到mysql中**
 
 链接：https://pan.baidu.com/s/1zJZTccPjrY4RD_TgAUh84A 
 提取码：cmuv 
 
-## 运行效果
+**2. 开启api查询服务**
+```python
+   python amapSearchApi.py
+```
+**3. 开始查询**
+
+URL: http://127.0.0.1/search?point=117.195907,39.118327
+
+![](https://github.com/wuwenrufeng/amap/blob/master/docs/api.png)
+## 测试结果
 #### 测试环境：个人PC
 #### 1.查询耗时
 
