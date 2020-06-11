@@ -30,6 +30,22 @@ pip install -r requirements.txt
 链接：https://pan.baidu.com/s/1zJZTccPjrY4RD_TgAUh84A 
 提取码：cmuv 
 
+**2. 数据库访问配置 **
+
+文件地址：amap/utils/settings.py
+
+```python
+# mysql
+MYSQL_PARAM = {
+    'provider': 'mysql',
+    'host': 'localhost',
+    'port': 3306,
+    'user': 'admin',
+    'passwd': '123456',
+    'db': 'cn_area'
+}
+```
+
 **2. 开启api查询服务**
 ```python
    python amapSearchApi.py
