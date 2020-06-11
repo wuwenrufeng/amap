@@ -125,7 +125,7 @@ class RegionSearch:
         province = result['province'][0]
         district = result['district'][0]
         if province=='' and  not district=='' :
-            districtAdcode = district[2]
+            districtAdcode = district[1]
             cityAdcode = districtAdcode // 100 *100
             provinceAdcode = districtAdcode // 10000 *10000
             sql = 'SELECT province.id,province.name,province.adcode,city.id,city.name,city.adcode,district.id,district.name,district.adcode FROM district LEFT JOIN city on city.adcode=%s LEFT JOIN province ON province.adcode=%s WHERE district.adcode=%s'% (cityAdcode, provinceAdcode, districtAdcode)
