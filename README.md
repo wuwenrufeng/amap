@@ -53,7 +53,7 @@ MYSQL_PARAM = {
 
 URL: http://127.0.0.1/search?point=117.195907,39.118327
 
-![](https://github.com/wuwenrufeng/amap/blob/master/docs/api.png)
+![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/api.png)
 ## 使用手册
 **第一步：高德地图-初始化出各省级(有边界信息)、市级和区级的初始信息**
 ```python
@@ -116,14 +116,14 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 #### 测试环境：个人PC
 #### 1.查询耗时
 
-![](https://github.com/wuwenrufeng/amap/blob/master/docs/time.png)
+![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/time.png)
 
 #### 2.查询准确率
-![](https://github.com/wuwenrufeng/amap/blob/master/docs/test.png)
+![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/test.png)
 
 ##### PS: 准确率测试是使用区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了！
 😜
-![](https://github.com/wuwenrufeng/amap/blob/master/docs/fushun.png)
+![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/fushun.png)
 
 ## 后续更新。。。
 
@@ -136,5 +136,5 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 如果您对amap有任何疑问，欢迎添加作者微信(微信号：wuwenrufeng)来交流讨论。或者，您可以扫下方二维码给作者打赏去升级其他地图api套件或买一杯咖啡哈🥰。
 
 <p align="center">
-    <img src="https://github.com/wuwenrufeng/amap/blob/master/docs/chat.jpg?raw=true" height="150" width="150">
+    <img src="https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/chat.jpg?raw=true" height="200" width="200">
 </p>
