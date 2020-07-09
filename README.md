@@ -136,5 +136,5 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 如果您对amap有任何疑问，欢迎添加作者微信(微信号：wuwenrufeng)来交流讨论。或者，您可以扫下方二维码给作者打赏去升级其他地图api套件或买一杯咖啡哈🥰。
 
 <p align="center">
-    <img src="https://github.com/wuwenrufeng/amap/blob/master/docs/chat.jpg" height="150" width="150">
+    <img src="https://github.com/wuwenrufeng/amap/blob/master/docs/chat.jpg?raw=true" height="150" width="150">
 </p>
