@@ -13,7 +13,7 @@ https://wuwenrufeng.github.io/amap/
 ## 项目由来
 官方服务有请求限制，又不想升级plus
 
-![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/gaode1.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/gaode1.png)
 
 ## 配置环境
 运行环境：需要运行在 python 3.7.4+ 
