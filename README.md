@@ -122,6 +122,7 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 ![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/test.png)
 
 ##### PS: 准确率测试是使用区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了！
+比如抚顺县的实际地理区域是不包含抚顺县的，但官方的center却标到了抚顺县。
 😜
 ![](https://raw.githubusercontent.com/wuwenrufeng/amap/master/docs/fushun.png)
 
