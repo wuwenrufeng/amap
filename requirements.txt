@@ -4,4 +4,4 @@ pony==0.7.13
 numpy==1.17.0
 matplotlib==3.2.1
 Flask==1.1.2
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
