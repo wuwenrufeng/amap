@@ -13,7 +13,7 @@ https://wuwenrufeng.github.io/amap/
 ## 项目由来
 官方服务有请求限制，又不想升级plus
 
-![](https://gitee.com/wuwenrufeng/assets/raw/master/gaode1.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/gaode1.png)
 
 ## 配置环境
 运行环境：需要运行在 python 3.7.4+ 
@@ -53,7 +53,7 @@ MYSQL_PARAM = {
 
 URL: http://127.0.0.1/search?point=117.195907,39.118327
 
-![](https://gitee.com/wuwenrufeng/assets/raw/master/api.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/api.png)
 ## 使用手册
 **第一步：高德地图-初始化出各省级(有边界信息)、市级和区级的初始信息**
 ```python
@@ -116,15 +116,15 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 #### 测试环境：个人PC
 #### 1.查询耗时
 
-![](https://gitee.com/wuwenrufeng/assets/raw/master/time.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/time.png)
 
 #### 2.查询准确率
-![](https://gitee.com/wuwenrufeng/assets/raw/master/test.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/test.png)
 
 ##### PS: 准确率测试是使用区级center进行查询的，所得准确率应该是100%，丢失的准确率是因为官方将center标记错误了！
 ##### 比如抚顺县的实际地理区域是不包含抚顺县的，但官方的center却标到了抚顺县。
 😜
-![](https://gitee.com/wuwenrufeng/assets/raw/master/fushun.png)
+![](https://gitee.com/wuwenrufeng/amap/raw/master/fushun.png)
 
 ## 后续更新。。。
 
@@ -137,5 +137,5 @@ URL: http://127.0.0.1/search?point=117.195907,39.118327
 如果您对amap有任何疑问，欢迎添加作者微信(微信号：wuwenrufeng)来交流讨论。或者，您可以扫下方二维码给作者打赏去升级其他地图api套件或买一杯咖啡哈🥰。
 
 <p align="center">
-    <img src="https://gitee.com/wuwenrufeng/assets/raw/master/pay1.png" height="100" width="100">
+    <img src="https://gitee.com/wuwenrufeng/amap/raw/master/pay1.png" height="100" width="100">
 </p>
